@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Search App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>💼 Job Search App</h1>
+
+<div class="filters">
+    <input type="text" id="searchInput" placeholder="Search job title...">
+    
+    <select id="categorySelect">
+        <option value="">All Categories</option>
+        <option value="software-dev">Software Development</option>
+        <option value="design">Design</option>
+        <option value="marketing">Marketing</option>
+        <option value="customer-support">Customer Support</option>
+    </select>
+
+    <input type="text" id="locationInput" placeholder="Location (e.g., India)">
+    
+    <button id="searchBtn">Search</button>
+</div>
+
+<div id="loader" class="loader hidden"></div>
+
+<div id="jobsContainer" class="jobs-grid"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
